@@ -63,19 +63,19 @@ Key columns analyzed:
 ## Project Structure
 Suggested folder layout for this project:
 ```text
-fleet-risk-operations-analysis-sql-powerbi/
+supply-chain-delivery-prediction-python-ml/
 │
 ├── README.md                      # Project documentation
-├── Fleet_Risk_Command_Center.pbix # Final Power BI Dashboard file
+├── requirements.txt               # Python package dependencies
 │
-├── sql_scripts/
-│   ├── 01_schema_setup.sql        # Table creation & relationships
-│   ├── 02_data_cleaning.sql       # Handling nulls, casting data types
-│   ├── 03_risk_aggregations.sql   # SQL views for Power BI ingestion
-│   └── 04_ad_hoc_analysis.sql     # Standalone business insight queries
+├── notebooks/
+│   └── Supply_Chain_Analysis.ipynb # Main Jupyter Notebook with EDA & ML
+│
+├── reports/
+│   └── SUPPLY_CHAIN_DELIVERY_PERFORMANCE_REPORT.pdf # Executive summary
 │
 └── dataset/                       
-    └── raw_csv_files/             # Raw data files used in the project
+    └── DataCoSupplyChainDataset.csv # Raw data file (ensure ignored in .gitignore)
 ```
 
 ## Data Cleaning & Preparation
